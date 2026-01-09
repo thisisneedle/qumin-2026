@@ -9,12 +9,12 @@
   ],
   "creatorBuild" : "34892",
   "files" : {
-    "\/about.html" : {
+    "\/about\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/about.html",
+      "oAP" : "\/about\/index.html",
       "oF" : 0
     },
     "\/assets\/css\/example.css" : {
@@ -1287,12 +1287,12 @@
       "oAP" : "\/assets\/videos\/stone-island-case-study.mp4",
       "oF" : 0
     },
-    "\/contact.html" : {
+    "\/contact\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/contact.html",
+      "oAP" : "\/contact\/index.html",
       "oF" : 0
     },
     "\/index.html" : {
@@ -1303,68 +1303,68 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
-    "\/terms.html" : {
+    "\/terms\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/terms.html",
+      "oAP" : "\/terms\/index.html",
       "oF" : 0
     },
-    "\/work-detail--beatbot.html" : {
+    "\/work\/beatbot\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/work-detail--beatbot.html",
-      "oF" : 1
-    },
-    "\/work-detail--funko.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/work-detail--funko.html",
+      "oAP" : "\/work\/beatbot\/index.html",
       "oF" : 0
     },
-    "\/work-detail--glashutte.html" : {
+    "\/work\/funko\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/work-detail--glashutte.html",
+      "oAP" : "\/work\/funko\/index.html",
       "oF" : 0
     },
-    "\/work-detail--manu.html" : {
+    "\/work\/glashutte\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/work-detail--manu.html",
+      "oAP" : "\/work\/glashutte\/index.html",
       "oF" : 0
     },
-    "\/work-detail--moxy.html" : {
+    "\/work\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/work-detail--moxy.html",
+      "oAP" : "\/work\/index.html",
       "oF" : 0
     },
-    "\/work-detail--stone-island.html" : {
+    "\/work\/manu\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/work-detail--stone-island.html",
+      "oAP" : "\/work\/manu\/index.html",
       "oF" : 0
     },
-    "\/work.html" : {
+    "\/work\/moxy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/work.html",
+      "oAP" : "\/work\/moxy\/index.html",
+      "oF" : 0
+    },
+    "\/work\/stone-island\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work\/stone-island\/index.html",
       "oF" : 0
     }
   },
