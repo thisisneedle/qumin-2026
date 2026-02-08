@@ -131,8 +131,8 @@ li {
   width: 25px;
   overflow: hidden;
   text-indent: -9999px;
-  background: url('../images/qumin-logo.svg') 0 0 no-repeat;
-  background-size: 104px 25px;
+  background: url('../images/logo.webp') 0 0 no-repeat;
+  background-size: contain;
 }
 
 .nav {
@@ -460,7 +460,7 @@ max-width: 1440px; */
 }
 
 .offices {
-  padding: 3rem 0
+  padding: 3rem 0 calc(3rem + 60px);
 }
 
 .offices-grid {
@@ -471,6 +471,7 @@ max-width: 1440px; */
 
 .offices article {
   color: #fff;
+  max-width: 426px;
   padding: 0 0 0 42px;
 }
 
@@ -485,6 +486,10 @@ max-width: 1440px; */
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
   padding: 3rem 0
+}
+
+.work-listing {
+  min-height: calc(100vh - 270px);
 }
 
 .panel {
@@ -521,9 +526,14 @@ max-width: 1440px; */
 }
 
 .site-footer {
+  position: relative;
   background: #101010;
   color: #fff;
   padding: 60px 0;
+}
+
+.site-footer--home {
+  padding: 0 0 60px;
 }
 
 .site-footer .logo {
@@ -583,202 +593,6 @@ max-width: 1440px; */
 
 .terms a:hover {
   text-decoration: none;
-}
-
-@media (max-width: 900px) {
-
-  .flex-grid,
-  .case__fancy-grid,
-  .case__offset-width,
-  .case__fancy-grid--funko .case__full-width {
-    flex-direction: column !important;
-  }
-
-  .case__fancy-grid--beatbot .case__offset-width__item__1,
-  .case__fancy-grid--beatbot .case__offset-width__item__2,
-  .case__fancy-grid--funko .case__twothirds-width,
-  .case__fancy-grid--funko .case__third-width {
-    width: 100% !important;
-  }
-
-  .case__fancy-grid--funko .case__twothirds-width .video-frame {
-    min-height: 600px !important;
-  }
-
-  .case__half-width__item__1,
-  .case__half-width__item__2,
-  .case__half-width__item__3,
-  .case__half-width__item__4 {
-    min-height: 600px !important;
-  }
-
-  .case__half-width__item__1 .image-frame,
-  .case__half-width__item__2 .image-frame,
-  .case__half-width__item__3 .image-frame,
-  .case__half-width__item__4 .image-frame,
-  .case__half-width__item__1 .video-frame,
-  .case__half-width__item__2 .video-frame,
-  .case__half-width__item__3 .video-frame,
-  .case__half-width__item__4 .video-frame {
-    height: 600px !important;
-  }
-
-  .case__half-width__item__1 .image-frame img,
-  .case__half-width__item__2 .image-frame img,
-  .case__half-width__item__3 .image-frame img,
-  .case__half-width__item__4 .image-frame img {
-    height: 600px !important;
-  }
-
-  .work-intro .card:first-child,
-  .work-intro .card:last-child {
-    width: 100%;
-  }
-
-  .card-link .video-frame {
-    height: 480px;
-  }
-
-  .split .copy br {
-    display: none;
-  }
-
-  .container.stagger-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .container.stagger-grid>.card {
-    grid-column: span 12 !important;
-  }
-
-  .container.stagger-grid>.card img {
-    aspect-ratio: 16 / 9;
-  }
-
-  .grid--3 {
-    grid-template-columns: repeat(2, 1fr)
-  }
-
-  .split {
-    grid-template-columns: 1fr
-  }
-
-  .offices-grid {
-    grid-template-columns: 1fr
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr
-  }
-
-  .office--london,
-  .office--shanghai,
-  .office--dubai {
-    background-position: 50%;
-  }
-
-  .about-part.split {
-    gap: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .about-part.split.reverse {
-    gap: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
-  }
-
-  .about-part .copy.copyier {
-    text-align: center !important;
-  }
-
-  .stripe,
-  .about-part,
-  .brand-stripe {
-    height: auto !important;
-    padding: 60px 0 !important;
-  }
-
-  .brand-stripe .about-part.split {
-    gap: 30px;
-  }
-
-  .contact .darkbg .split h2 {
-    font-size: 80px;
-    margin: 0 0 -22px;
-  }
-}
-
-@media (max-width: 600px) {
-
-  .contact .darkbg .split {
-    padding-top: 200px;
-  }
-
-  .footer-lower {
-    gap: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .brands-listing {
-    transform: translateX(-10px);
-  }
-
-  .container.stagger-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .grid--2,
-  .grid--3 {
-    grid-template-columns: 1fr
-  }
-
-  nav {
-    display: block;
-  }
-
-  .nav {
-    display: none
-  }
-
-  .menu-toggle {
-    border: 0;
-    padding: 0;
-    width: 34px;
-    height: 25px;
-    display: block;
-    cursor: pointer;
-    overflow: hidden;
-    text-indent: -9999px;
-    background: url('../images/menu.svg') center right no-repeat;
-    background-size: contain;
-
-  }
-
-  nav[aria-expanded="true"] .nav {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background: #fff;
-    position: absolute;
-    right: 1rem;
-    top: 3.5rem;
-    padding: 1rem;
-    border: 1px solid #eee;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .06)
-  }
-
-  .hero-typewriter {
-    font-size: 38px;
-  }
-
-  .offices article {
-    font-size: 16px;
-  }
 }
 
 .clock-card {
@@ -1029,6 +843,23 @@ justify-content: center; */
   object-fit: cover;
 }
 
+.stone-island-two-case__1 {
+  height: 600px !important;
+  margin-bottom: 20px;
+}
+
+.stone-island-two-case__3 {
+  height: 600px !important;
+}
+
+.stone-island-two-case__2 {
+  height: 900px !important;
+}
+
+.stone-island-two-case__4 {
+  height: 300px !important;
+}
+
 .case__offset-width {
   margin: 0;
   gap: 20px;
@@ -1135,6 +966,10 @@ justify-content: center; */
   transition: opacity 1600ms ease, transform 1600ms ease;
 }
 
+.fade-section.fade-section--footer {
+  transform: translateY(0);
+}
+
 .fade-section.is-visible {
   opacity: 1;
   transform: translateY(0);
@@ -1237,4 +1072,237 @@ justify-content: center; */
   margin-left: auto;
   margin-right: auto;
   max-width: min(740px, 92vw);
+}
+
+@media (max-width: 900px) {
+
+  .flex-grid,
+  .case__offset-width,
+  .case__fancy-grid--funko .case__full-width,
+  .case__fancy-grid--stone-island-two .case__full-width {
+    flex-direction: column !important;
+  }
+
+  .case__fancy-grid--beatbot .case__offset-width__item__1,
+  .case__fancy-grid--beatbot .case__offset-width__item__2,
+  .case__fancy-grid--stone-island-two .case__twothirds-width,
+  .case__fancy-grid--stone-island-two .case__third-width,
+  .case__fancy-grid--funko .case__twothirds-width,
+  .case__fancy-grid--funko .case__third-width {
+    width: 100% !important;
+  }
+
+  .case__fancy-grid--funko .case__twothirds-width .video-frame {
+    min-height: auto !important;
+    aspect-ratio: 9 / 16;
+  }
+
+  .case__half-width__item__1,
+  .case__half-width__item__2,
+  .case__half-width__item__3,
+  .case__half-width__item__4 {
+    min-height: auto !important;
+    aspect-ratio: 9 / 16;
+  }
+
+  .case__half-width__item__1 .image-frame,
+  .case__half-width__item__2 .image-frame,
+  .case__half-width__item__3 .image-frame,
+  .case__half-width__item__4 .image-frame,
+  .case__half-width__item__1 .video-frame,
+  .case__half-width__item__2 .video-frame,
+  .case__half-width__item__3 .video-frame,
+  .case__half-width__item__4 .video-frame {
+    height: auto !important;
+    aspect-ratio: 9 / 16;
+  }
+
+  .case__half-width__item__1 .image-frame img,
+  .case__half-width__item__2 .image-frame img,
+  .case__half-width__item__3 .image-frame img,
+  .case__half-width__item__4 .image-frame img {
+    height: auto !important;
+    aspect-ratio: 9 / 16;
+  }
+
+  .work-intro .card:first-child,
+  .work-intro .card:last-child {
+    width: 100%;
+  }
+
+  .card-link .video-frame {
+    height: 480px;
+  }
+
+  .split .copy br {
+    display: none;
+  }
+
+  .container.stagger-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container.stagger-grid>.card {
+    grid-column: span 12 !important;
+  }
+
+  .container.stagger-grid>.card img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .split {
+    grid-template-columns: 1fr
+  }
+
+  .offices-grid {
+    grid-template-columns: 1fr
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr
+  }
+
+  .office--london,
+  .office--shanghai,
+  .office--dubai {
+    background-position: 50%;
+  }
+
+  .about-part.split {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-part.split.reverse {
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .about-part .copy.copyier {
+    text-align: center !important;
+  }
+
+  .stripe,
+  .about-part,
+  .brand-stripe {
+    height: auto !important;
+    padding: 60px 0 !important;
+  }
+
+  .brand-stripe .about-part.split {
+    gap: 30px;
+  }
+
+  .contact .darkbg .split h2 {
+    font-size: 80px;
+    margin: 0 0 -22px;
+  }
+
+  .stone-island-two-case__1,
+  .stone-island-two-case__2,
+  .stone-island-two-case__3,
+  .stone-island-two-case__4 {
+    height: auto !important;
+    min-height: auto !important;
+    aspect-ratio: 9 / 16;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .work-listing {
+    min-height: 100px;
+  }
+
+  .contact .darkbg .split {
+    padding-top: 200px;
+  }
+
+  .footer-lower {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brands-listing {
+    transform: translateX(-10px);
+  }
+
+  .container.stagger-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--2,
+  .grid--3 {
+    grid-template-columns: 1fr
+  }
+
+  nav {
+    display: block;
+  }
+
+  .nav {
+    display: none
+  }
+
+  .menu-toggle {
+    border: 0;
+    padding: 0;
+    width: 34px;
+    height: 25px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url('../images/menu.svg') center right no-repeat;
+    background-size: contain;
+
+  }
+
+  nav[aria-expanded="true"] .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    position: absolute;
+    right: 1rem;
+    top: 3.5rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06)
+  }
+
+  .hero-typewriter {
+    font-size: 38px;
+  }
+
+  .offices article {
+    font-size: 16px;
+  }
+
+  .card-link .video-frame {
+    height: auto;
+    aspect-ratio: 1600 / 1067;
+  }
+
+  .card-meta {
+    margin-bottom: 0 !important;
+  }
+
+  .work-intro .card:last-child .card-meta {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    color: var(--ink);
+  }
+
 }
