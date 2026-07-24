@@ -570,6 +570,10 @@ li {
   justify-content: space-between;
 }
 
+.footer-lower a {
+  margin-left: 12px;
+}
+
 .footer-lower a:hover {
   text-decoration: underline;
 }

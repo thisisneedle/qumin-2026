@@ -1693,6 +1693,14 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
+    "\/privacy\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/privacy\/index.html",
+      "oF" : 0
+    },
     "\/terms\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
