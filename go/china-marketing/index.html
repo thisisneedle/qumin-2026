@@ -8,6 +8,9 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-WSFMBF7');</script>
   <!-- End Google Tag Manager -->
+  <!-- Google Ads conversion tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-958023660"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-958023660');</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>China Marketing Agency | Qumin</title>
@@ -157,6 +160,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .then(function (res) {
         if (!res.ok) throw new Error((res.j && res.j.error) || 'error');
         try { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: 'qumin_lead', form: 'china-marketing' }); } catch (e) {}
+        try { if (window.gtag) window.gtag('event', 'conversion', { send_to: 'AW-958023660/zwvBCMe5zNkcEOyP6cgD' }); } catch (e) {}
         document.getElementById('lp-form-live').style.display = 'none';
         document.getElementById('lp-form-done').style.display = 'block';
       })
