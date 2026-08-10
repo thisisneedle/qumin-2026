@@ -107,9 +107,14 @@
   })();
 
   // Mobile Menu
+  // The landing pages under /go/ use a cut-down header with no mobile menu
+  // button. Checking only the nav was not enough: the missing button threw
+  // here, which stopped the whole script, so everything below this point never
+  // ran. That included the scroll fade-in, leaving those pages showing the
+  // header over eight invisible sections.
   const nav = document.querySelector('nav');
-  if(nav){
-    const btn = document.querySelector('.menu-toggle');
+  const btn = document.querySelector('.menu-toggle');
+  if(nav && btn){
     btn.addEventListener('click', () => {
       const expanded = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!expanded));
