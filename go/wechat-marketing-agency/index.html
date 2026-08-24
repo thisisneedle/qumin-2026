@@ -202,7 +202,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="lp-field"><label for="lp-email">Work email</label><input id="lp-email" name="email" type="email" autocomplete="email" required></div>
             <div class="lp-field"><label for="lp-company">Company</label><input id="lp-company" name="company" type="text" autocomplete="organization"></div>
             <div class="lp-field"><label for="lp-message">What are you looking to do in China?</label><textarea id="lp-message" name="message"></textarea></div>
-            <div class="lp-hp" aria-hidden="true"><label>Do not fill this in<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label></div>
+            <div class="lp-hp" aria-hidden="true"><label>Do not fill this in<input type="text" name="hp" tabindex="-1" autocomplete="off"></label></div>
             <input type="hidden" name="gclid"><input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term"><input type="hidden" name="utm_content"><input type="hidden" name="page" value="wechat-marketing-agency">
             <div class="cf-turnstile" data-sitekey="0x4AAAAAAEFScJR8hrXGU1Y_" data-theme="dark" style="margin-bottom:18px"></div>
             <button class="lp-submit" type="submit">Send enquiry</button>
@@ -252,8 +252,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
       .then(function (res) {
         if (!res.ok) throw new Error((res.j && res.j.error) || 'error');
+        if (!(res.j && res.j.q)) {
         try { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: 'qumin_lead', form: 'wechat-marketing-agency' }); } catch (e) {}
-        try { if (window.gtag) window.gtag('event', 'conversion', { send_to: 'AW-958023660/zwvBCMe5zNkcEOyP6cgD' }); } catch (e) {}
+                try { if (window.gtag) window.gtag('event', 'conversion', { send_to: 'AW-958023660/zwvBCMe5zNkcEOyP6cgD' }); } catch (e) {}
+        }
         document.getElementById('lp-form-live').style.display = 'none';
         document.getElementById('lp-form-done').style.display = 'block';
       })
