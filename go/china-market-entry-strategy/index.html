@@ -100,6 +100,13 @@
     .lp-note { text-align: center; color: #bbb; font-size: .9rem; margin: 0 0 16px; }
     .lp-note.is-error { color: #e88; }
     .lp-slim-footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px 30px; align-items: center; font-size: .85rem; color: #aaa; }
+    .lp-work { padding: 0 0 82px; }
+    .lp-work h2 { font-family: "ambroise-francois-std", serif; font-weight: 600; text-align: center; font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 1.2em; }
+    .lp-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; max-width: 1080px; margin: 0 auto; padding: 0; list-style: none; }
+    @media (max-width: 720px) { .lp-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } }
+    .lp-work-grid a { display: block; color: #111; text-decoration: none; }
+    .lp-work-grid img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 10px; background: #eee; }
+    .lp-work-grid span { display: block; font-family: "ambroise-francois-std", serif; font-weight: 600; font-size: 1.05rem; margin-top: 10px; }
   </style>
 </head>
 <body>
@@ -151,6 +158,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="lp-case"><div class="lp-case-brand">Glashütte Original</div><h3>Limited-edition watches sold out within hours on China launch</h3><p>Glashütte Original needed a full China market entry plan for a brand that had been built almost entirely for Western audiences. Qumin developed a year-long localisation and launch strategy, repositioning the brand's heritage for Chinese fine-watch consumers.</p></div>
         <div class="lp-case"><div class="lp-case-brand">Kiehl's</div><h3>Retinol Serum became the No.1 product in a hyper-competitive category</h3><p>Kiehl's needed to establish a new product in a crowded China skincare market. Qumin built a phased KOL and KOC strategy that moved consumers from awareness to advocacy in stages, ensuring the Retinol Serum built credible social proof before scaling spend.</p></div>
       </div>
+    </div>
+  </section>
+
+  <section class="lp-work fade-section">
+    <div class="container">
+      <h2>Recent work in China</h2>
+      <ul class="lp-work-grid">
+        <li><a href="https://qumin.com/work/stone-island/"><picture><source type="image/avif" srcset="/assets/images/stone-island-case-card.avif"><img src="/assets/images/stone-island-case-card.jpg" alt="Stone Island, Qumin work in China" width="900" height="600" loading="lazy" decoding="async"></picture><span>Stone Island</span></a></li>
+        <li><a href="https://qumin.com/work/funko/"><picture><source type="image/avif" srcset="/assets/images/funko-case-card.avif"><img src="/assets/images/funko-case-card.jpg" alt="Funko, Qumin work in China" width="900" height="600" loading="lazy" decoding="async"></picture><span>Funko</span></a></li>
+        <li><a href="https://qumin.com/work/vuori/"><picture><source type="image/avif" srcset="/assets/images/vuori-case-card.avif"><img src="/assets/images/vuori-case-card.jpg" alt="Vuori, Qumin work in China" width="900" height="600" loading="lazy" decoding="async"></picture><span>Vuori</span></a></li>
+        <li><a href="https://qumin.com/work/glashutte/"><picture><source type="image/avif" srcset="/assets/images/glashutte-case-card.avif"><img src="/assets/images/glashutte-case-card.jpg" alt="Glashütte Original, Qumin work in China" width="900" height="600" loading="lazy" decoding="async"></picture><span>Glashütte Original</span></a></li>
+        <li><a href="https://qumin.com/work/moxy/"><picture><source type="image/avif" srcset="/assets/images/moxy-case-card.avif"><img src="/assets/images/moxy-case-card.jpg" alt="Moxy, Qumin work in China" width="900" height="600" loading="lazy" decoding="async"></picture><span>Moxy</span></a></li>
+        <li><a href="https://qumin.com/work/manu/"><picture><source type="image/avif" srcset="/assets/images/manu-case-card.avif"><img src="/assets/images/manu-case-card.jpg" alt="Manchester United, Qumin work in China" width="900" height="600" loading="lazy" decoding="async"></picture><span>Manchester United</span></a></li>
+      </ul>
     </div>
   </section>
 
