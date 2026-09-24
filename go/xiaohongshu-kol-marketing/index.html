@@ -31,14 +31,8 @@
     .lp-cta-row { text-align: center; }
     .lp-btn { display: inline-block; background: #fff; color: #111; font-family: "operetta-32", serif; font-weight: 600; padding: 16px 34px; border-radius: 999px; font-size: 1.05rem; transition: transform 200ms ease, background 200ms ease; }
     .lp-btn:hover { transform: translateY(-2px); background: #f0f0f0; }
-    .lp-proof { padding: 70px 0; }
     .lp-proof h2 { font-family: "ambroise-francois-std", serif; font-weight: 600; text-align: center; font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .3em; }
     .lp-kicker { text-align: center; color: var(--muted); letter-spacing: .18em; text-transform: uppercase; font-size: .78rem; margin: 0 0 3em; }
-    .lp-names { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 40px; margin: 0 0 60px; padding: 0; list-style: none; }
-    .lp-names li { font-family: "ambroise-francois-std", serif; font-weight: 600; font-size: clamp(1.1rem, 2.4vw, 1.7rem); color: #111; opacity: .85; }
-    .lp-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 26px; max-width: 1000px; margin: 0 auto; }
-    .lp-service h3 { font-family: "ambroise-francois-std", serif; font-weight: 600; font-size: 1.2rem; margin: 0 0 .3em; }
-    .lp-service p { margin: 0; color: #444; font-size: .98rem; }
     .lp-intro { padding: 76px 0; background: #f7f5f2; }
     .lp-intro-wrap { max-width: 820px; }
     .lp-intro h2 { font-family: "ambroise-francois-std", serif; font-weight: 600; font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 .6em; }
@@ -73,11 +67,6 @@
     .lp-case-brand { font-family: "ambroise-francois-std", serif; font-weight: 600; font-size: 1.05rem; color: #c8102e; margin-bottom: .5em; }
     .lp-case h3 { font-family: "ambroise-francois-std", serif; font-weight: 600; font-size: 1.25rem; line-height: 1.25; margin: 0 0 .5em; }
     .lp-case p { margin: 0; color: #444; font-size: .96rem; line-height: 1.6; }
-    .lp-stats { padding: 60px 0; background: #111; }
-    .lp-stats-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px 70px; }
-    .lp-stat { text-align: center; }
-    .lp-stat-v { font-family: "ambroise-francois-std", serif; font-weight: 600; font-size: clamp(2rem, 5vw, 3.2rem); color: #fff; line-height: 1; }
-    .lp-stat-l { color: #aaa; font-size: .85rem; letter-spacing: .04em; margin-top: .5em; max-width: 200px; }
     .lp-nav { display: flex; gap: 26px; align-items: center; }
     .lp-nav a { color: #ddd; font-size: .92rem; }
     .lp-nav a:hover { color: #fff; }
@@ -95,12 +84,32 @@
     .lp-submit { width: 100%; background: #fff; color: #111; border: none; padding: 16px; border-radius: 999px; font-family: "operetta-32", serif; font-weight: 600; font-size: 1.05rem; cursor: pointer; transition: transform 200ms ease; }
     .lp-submit:hover { transform: translateY(-2px); }
     .lp-submit:disabled { opacity: .5; cursor: default; transform: none; }
-    .lp-note { text-align: center; color: #888; font-size: .82rem; margin-top: 16px; }
     .lp-done { text-align: center; padding: 40px 0; }
     .lp-done h2 { font-family: "ambroise-francois-std", serif; }
     .lp-slim-footer { background: #0f0f0f; color: #fff; padding: 30px 0; }
-    .lp-slim-footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; align-items: center; font-size: .85rem; color: #aaa; }
     .lp-slim-footer a { color: #ddd; }
+    .lp-proof { padding: 70px 0 10px; }
+    .lp-names { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 40px; margin: 0; padding: 0; list-style: none; }
+    .lp-names li { font-family: "ambroise-francois-std", serif; font-weight: 600; font-size: clamp(1.1rem, 2.4vw, 1.7rem); color: #111; letter-spacing: -0.01em; }
+    .lp-services { max-width: 900px; margin: 0 auto; padding: 0; list-style: none; border-top: 1px solid #e2ded8; }
+    .lp-service { display: grid; grid-template-columns: 280px 1fr; gap: 8px 40px; padding: 20px 0; border-bottom: 1px solid #e2ded8; align-items: baseline; }
+    .lp-service h3 { font-family: "ambroise-francois-std", serif; font-weight: 600; font-size: 1.2rem; margin: 0; }
+    .lp-service p { margin: 0; color: #444; font-size: .98rem; line-height: 1.55; }
+    @media (max-width: 720px) { .lp-service { grid-template-columns: 1fr; gap: 4px; padding: 16px 0; } }
+    .lp-stats { padding: 64px 0 70px; background: #111; }
+    .lp-stats-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px 24px; max-width: 1000px; margin: 0 auto 44px; }
+    @media (max-width: 720px) { .lp-stats-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 16px; } }
+    .lp-stat { text-align: center; }
+    .lp-stat-v { font-family: "ambroise-francois-std", serif; font-weight: 600; font-size: clamp(1.9rem, 4.6vw, 3rem); color: #fff; line-height: 1; }
+    .lp-stat-l { color: #bdbdbd; font-size: .88rem; line-height: 1.45; margin: .55em auto 0; max-width: 210px; }
+    .lp-stats .lp-cta-row { margin: 0; }
+    .lp-field label .req { color: #bbb; font-weight: 400; letter-spacing: 0; text-transform: none; margin-left: 6px; }
+    .lp-field.is-error input { border-color: #e88; }
+    .lp-field-error { display: none; color: #e88; font-size: .86rem; margin-top: 7px; }
+    .lp-field.is-error .lp-field-error { display: block; }
+    .lp-note { text-align: center; color: #bbb; font-size: .9rem; margin: 0 0 16px; }
+    .lp-note.is-error { color: #e88; }
+    .lp-slim-footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px 30px; align-items: center; font-size: .85rem; color: #aaa; }
   </style>
 </head>
 <body>
@@ -143,26 +152,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>Vuori</li>
         <li>Stone Island</li>
       </ul>
-      <h2>What we do</h2>
-      <p class="lp-kicker" style="margin-bottom:2.4em">China marketing, end to end</p>
-      <div class="lp-services">
-        <div class="lp-service"><h3>Xiaohongshu (RED) Strategy</h3><p>From account setup to full content programming, we build RED presences that earn trust with discovery-first audiences rather than chasing viral moments.</p></div>
-        <div class="lp-service"><h3>KOL &amp; KOC Identification</h3><p>We source, vet and brief the right influencers for your category, from macro celebrities to micro KOCs, matching voice and audience to your brand values.</p></div>
-        <div class="lp-service"><h3>KOL Campaign Management</h3><p>End-to-end campaign execution: negotiation, briefing, content review, posting schedules and performance reporting, all handled by our in-house China team.</p></div>
-        <div class="lp-service"><h3>Content &amp; Creative for RED</h3><p>Xiaohongshu rewards genuine, aesthetic and informative content. Our bilingual creative team produces notes, imagery and short video built for the platform's native culture and search behaviour.</p></div>
-        <div class="lp-service"><h3>China Brand &amp; Market-Entry Strategy</h3><p>Before activating influencers, we make sure your positioning, naming and narrative are right for China so every KOL post reinforces something real and lasting.</p></div>
-      </div>
     </div>
   </section>
-
-  <section class="lp-intro fade-section">
-    <div class="container lp-intro-wrap">
-      <h2>Xiaohongshu and KOL Marketing Built for Western Brands</h2>
-      <p>Xiaohongshu, also known as RED or Little Red Book and now finding new Western audiences as RedNote, has become the primary discovery engine for fashion, beauty, lifestyle and luxury in China. It is where consumers research products before they buy and where a well-placed KOC note can outperform a paid campaign many times over.</p>
-      <p>As a dedicated China KOL marketing agency, Qumin does not treat influencer marketing as a bolt-on. We build it into a broader platform strategy, matching the right voices, from celebrity KOLs to everyday KOCs, to the right moment in your brand's China story.</p>
-    </div>
-  </section>
-
   <section class="lp-cases fade-section">
     <div class="container">
       <h2>Proof in China</h2>
@@ -180,13 +171,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <section class="lp-stats fade-section">
-    <div class="container lp-stats-row">
+    <div class="container">
+      <div class="lp-stats-row">
       <div class="lp-stat"><div class="lp-stat-v">15+ years</div><div class="lp-stat-l">Managing China social for Western consumer brands</div></div>
       <div class="lp-stat"><div class="lp-stat-v">1,200+</div><div class="lp-stat-l">Influencers recruited in a single brand-building campaign</div></div>
       <div class="lp-stat"><div class="lp-stat-v">3x</div><div class="lp-stat-l">Store-wide transactions in a single KOL-led campaign (Chow Tai Fook)</div></div>
       <div class="lp-stat"><div class="lp-stat-v">#1</div><div class="lp-stat-l">Jewellery category ranking achieved on Double-11 via KOL and social</div></div>
+      </div>
+      <div class="lp-cta-row"><a class="lp-btn" href="#enquire">Talk to Our China Team</a></div>
     </div>
   </section>
+
+  <section class="lp-services-section lp-cases fade-section">
+    <div class="container">
+      <h2>What we do</h2>
+      <ul class="lp-services">
+        <li class="lp-service"><h3>Xiaohongshu (RED) Strategy</h3><p>From account setup to full content programming, we build RED presences that earn trust with discovery-first audiences rather than chasing viral moments.</p></li>
+        <li class="lp-service"><h3>KOL &amp; KOC Identification</h3><p>We source, vet and brief the right influencers for your category, from macro celebrities to micro KOCs, matching voice and audience to your brand values.</p></li>
+        <li class="lp-service"><h3>KOL Campaign Management</h3><p>End-to-end campaign execution: negotiation, briefing, content review, posting schedules and performance reporting, all handled by our in-house China team.</p></li>
+        <li class="lp-service"><h3>Content &amp; Creative for RED</h3><p>Xiaohongshu rewards genuine, aesthetic and informative content. Our bilingual creative team produces notes, imagery and short video built for the platform's native culture and search behaviour.</p></li>
+        <li class="lp-service"><h3>China Brand &amp; Market-Entry Strategy</h3><p>Before activating influencers, we make sure your positioning, naming and narrative are right for China so every KOL post reinforces something real and lasting.</p></li>
+      </ul>
+    </div>
+  </section>
+
   <section class="lp-how fade-section">
     <div class="container">
       <h2>How we work</h2>
@@ -199,6 +207,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <figure><img loading="lazy" src="/assets/images/london.avif" alt="Qumin London studio"><figcaption>London</figcaption></figure>
         <figure><img loading="lazy" src="/assets/images/shanghai.avif" alt="Qumin Shanghai studio"><figcaption>Shanghai</figcaption></figure>
       </div>
+    </div>
+  </section>
+
+  <section class="lp-intro fade-section">
+    <div class="container lp-intro-wrap">
+      <h2>Xiaohongshu and KOL Marketing Built for Western Brands</h2>
+      <p>Xiaohongshu, also known as RED or Little Red Book and now finding new Western audiences as RedNote, has become the primary discovery engine for fashion, beauty, lifestyle and luxury in China. It is where consumers research products before they buy and where a well-placed KOC note can outperform a paid campaign many times over.</p>
+      <p>As a dedicated China KOL marketing agency, Qumin does not treat influencer marketing as a bolt-on. We build it into a broader platform strategy, matching the right voices, from celebrity KOLs to everyday KOCs, to the right moment in your brand's China story.</p>
     </div>
   </section>
 
@@ -218,14 +234,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class="sub">Tell us about your brand and China goals and we will come back to you within one business day.</p>
           <form id="lp-form" novalidate>
             <div class="lp-field"><label for="lp-name">Your name</label><input id="lp-name" name="name" type="text" autocomplete="name"></div>
-            <div class="lp-field"><label for="lp-email">Work email</label><input id="lp-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="lp-field"><label for="lp-email">Work email<span class="req">required</span></label><input id="lp-email" name="email" type="email" autocomplete="email" required><p class="lp-field-error" id="lp-email-error">Please enter a valid work email.</p></div>
             <div class="lp-field"><label for="lp-company">Company</label><input id="lp-company" name="company" type="text" autocomplete="organization"></div>
             <div class="lp-field"><label for="lp-message">What are you looking to do in China?</label><textarea id="lp-message" name="message"></textarea></div>
             <div class="lp-hp" aria-hidden="true"><label>Do not fill this in<input type="text" name="hp" tabindex="-1" autocomplete="off"></label></div>
             <input type="hidden" name="gclid"><input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term"><input type="hidden" name="utm_content"><input type="hidden" name="page" value="xiaohongshu-kol-marketing">
             <div class="cf-turnstile" data-sitekey="0x4AAAAAAEFScJR8hrXGU1Y_" data-theme="dark" style="margin-bottom:18px"></div>
-            <button class="lp-submit" type="submit">Send enquiry</button>
             <p class="lp-note" id="lp-note">We reply from a real person, usually the founder. No spam, ever.</p>
+            <button class="lp-submit" type="submit">Send enquiry</button>
           </form>
         </div>
         <div id="lp-form-done" class="lp-done" style="display:none">
@@ -240,7 +256,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <footer class="lp-slim-footer">
   <div class="container">
-    <p>Qumin is a China marketing agency with teams in London, Shanghai and Dubai, helping Western consumer brands grow in China for over 15 years. &copy;Qumin 2026.</p>
+    <p>Qumin is a China marketing agency with teams in London, Shanghai and Dubai, helping Western consumer brands grow in China for over 15 years. 10 Greenland Street, London NW1 0ND. &copy;Qumin 2026.</p>
     <p><a href="https://qumin.com/work">Our work</a> &nbsp; <a href="https://qumin.com/about">About</a> &nbsp; <a href="https://qumin.com/contact">Contact</a> &nbsp; <a href="/privacy/">Privacy</a> &nbsp; <a href="mailto:hello@qumin.com">hello@qumin.com</a></p>
   </div>
 </footer>
@@ -273,10 +289,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var email = form.email.value.trim();
-    if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { note.textContent = 'Please enter a valid work email.'; note.style.color = '#e88'; form.email.focus(); return; }
+    var emailField = form.email.closest('.lp-field');
+    emailField.classList.remove('is-error');
+    if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { emailField.classList.add('is-error'); form.email.focus(); return; }
     if (true) {
       var tk = form.querySelector('[name="cf-turnstile-response"]');
-      if (!tk || !tk.value) { note.textContent = 'Please complete the verification check and try again.'; note.style.color = '#e88'; return; }
+      if (!tk || !tk.value) { note.textContent = 'Please complete the verification check and try again.'; note.classList.add('is-error'); return; }
     }
     var btn = form.querySelector('.lp-submit'); btn.disabled = true; btn.textContent = 'Sending...';
     var payload = {};
@@ -295,7 +313,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       })
       .catch(function () {
         btn.disabled = false; btn.textContent = 'Send enquiry';
-        note.textContent = 'Something went wrong. Please email hello@qumin.com.'; note.style.color = '#e88';
+        note.textContent = 'Something went wrong. Please email hello@qumin.com.'; note.classList.add('is-error');
       });
   });
 })();
