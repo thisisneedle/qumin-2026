@@ -250,7 +250,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="lp-field"><label for="lp-company">Company</label><input id="lp-company" name="company" type="text" autocomplete="organization"></div>
             <div class="lp-field"><label for="lp-message">What are you looking to do in China?</label><textarea id="lp-message" name="message"></textarea></div>
             <div class="lp-hp" aria-hidden="true"><label>Do not fill this in<input type="text" name="hp" tabindex="-1" autocomplete="off"></label></div>
-            <input type="hidden" name="gclid"><input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term"><input type="hidden" name="utm_content"><input type="hidden" name="page" value="china-social-media-agency">
+            <input type="hidden" name="gclid"><input type="hidden" name="gbraid"><input type="hidden" name="wbraid"><input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term"><input type="hidden" name="utm_content"><input type="hidden" name="page" value="china-social-media-agency">
             <div class="cf-turnstile" data-sitekey="0x4AAAAAAEFScJR8hrXGU1Y_" data-theme="dark" style="margin-bottom:18px"></div>
             <p class="lp-note" id="lp-note">We reply from a real person, usually the founder. No spam, ever.</p>
             <button class="lp-submit" type="submit">Send enquiry</button>
@@ -292,7 +292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 (function () {
   var INBOUND = 'https://chillios.com/api/inbound';
   var qs = new URLSearchParams(location.search);
-  ['gclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function (k) {
+  ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function (k) {
     var v = qs.get(k); var el = document.querySelector('input[name="' + k + '"]');
     if (v && el) el.value = v;
   });
