@@ -32,6 +32,11 @@
     @font-face { font-family: "ambroise-fallback-android"; src: local("Noto Serif Bold"), local("NotoSerif-Bold"); font-weight: 600; size-adjust: 48.79%; ascent-override: 200.44%; descent-override: 61.07%; line-gap-override: 0%; }
     @font-face { font-family: "operetta-fallback"; src: local("Times New Roman"), local("TimesNewRomanPSMT"); font-weight: 400; size-adjust: 106.45%; ascent-override: 112.07%; descent-override: 48.76%; line-gap-override: 0%; }
     @font-face { font-family: "operetta-fallback-android"; src: local("Noto Serif"), local("Noto Serif Regular"), local("NotoSerif-Regular"); font-weight: 400; size-adjust: 89.99%; ascent-override: 132.57%; descent-override: 57.67%; line-gap-override: 0%; }
+    /* 20 Oct 2026: the Adobe kit hides text until its fonts arrive, so the hero headline (the largest thing on a phone screen) paints late.
+       These two rules point at the same two preloaded kit files (n6 = Ambroise Demi 600, n4 = Operetta 400) but say font-display: swap,
+       so the sized stand-ins above paint at once and the real fonts replace them without a jump. Declared after the kit, so they win. */
+    @font-face { font-family: "ambroise-francois-std"; src: url("https://use.typekit.net/af/5c856a/000000000000000077359912/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+    @font-face { font-family: "operetta-32"; src: url("https://use.typekit.net/af/9bb42b/00000000000000007735e92e/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
     body { font-family: "operetta-32", "operetta-fallback", "operetta-fallback-android", serif; }
     h1, h2, h3 { font-family: "ambroise-francois-std", "ambroise-fallback", "ambroise-fallback-android", serif; }
     .lp-hero { padding: 130px 0 90px; }
