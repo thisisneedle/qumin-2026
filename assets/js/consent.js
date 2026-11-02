@@ -26,7 +26,7 @@
 
   function consentState(value) {
     var state = {};
-    TYPES.forEach(function (t) { state[t] = value; });
+    TYPES.forEach(function (t) { state[t] = t === 'ad_personalization' ? 'denied' : value; });
     return state;
   }
 
